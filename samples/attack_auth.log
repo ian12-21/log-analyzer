@@ -1,0 +1,31 @@
+2026-10-28T02:55:10.104512+01:00 ian-Vostro-3520 sshd[3101]: Accepted publickey for ian from 192.168.1.20 port 51022 ssh2: ED25519 SHA256:mX4/9n9ThUyrY9tH96ZUc3tPXCfRxvRMiWMlLs0ZqyQ
+2026-10-28T02:55:10.110233+01:00 ian-Vostro-3520 sshd[3101]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T02:57:41.552301+01:00 ian-Vostro-3520 sshd[3140]: Invalid user test from 198.51.100.7 port 40110
+2026-10-28T02:57:43.870114+01:00 ian-Vostro-3520 sshd[3140]: Failed password for invalid user test from 198.51.100.7 port 40110 ssh2
+2026-10-28T02:57:47.201845+01:00 ian-Vostro-3520 sshd[3140]: Failed password for invalid user test from 198.51.100.7 port 40110 ssh2
+2026-10-28T02:57:59.640022+01:00 ian-Vostro-3520 sshd[3140]: message repeated 2 times: [ Failed password for invalid user test from 198.51.100.7 port 40110 ssh2]
+2026-10-28T02:58:00.012733+01:00 ian-Vostro-3520 sshd[3140]: Connection closed by invalid user test 198.51.100.7 port 40110 [preauth]
+2026-10-28T03:00:00.118402+01:00 ian-Vostro-3520 sshd[3201]: Failed password for root from 203.0.113.5 port 60001 ssh2
+2026-10-28T03:00:08.220917+01:00 ian-Vostro-3520 sshd[3202]: Failed password for root from 203.0.113.5 port 60003 ssh2
+2026-10-28T03:00:16.307765+01:00 ian-Vostro-3520 sshd[3203]: Failed password for root from 203.0.113.5 port 60005 ssh2
+2026-10-28T03:00:24.415238+01:00 ian-Vostro-3520 sshd[3204]: Failed password for root from 203.0.113.5 port 60007 ssh2
+2026-10-28T03:00:32.502811+01:00 ian-Vostro-3520 sshd[3205]: Failed password for root from 203.0.113.5 port 60009 ssh2
+2026-10-28T03:00:40.611390+01:00 ian-Vostro-3520 sshd[3206]: Failed password for invalid user admin from 203.0.113.5 port 60011 ssh2
+2026-10-28T03:00:48.704126+01:00 ian-Vostro-3520 sshd[3207]: Failed password for invalid user admin from 203.0.113.5 port 60013 ssh2
+2026-10-28T03:00:56.809553+01:00 ian-Vostro-3520 sshd[3208]: Failed password for root from 203.0.113.5 port 60015 ssh2
+2026-10-28T03:01:04.913047+01:00 ian-Vostro-3520 sshd[3209]: Failed password for root from 203.0.113.5 port 60017 ssh2
+2026-10-28T03:01:12.020684+01:00 ian-Vostro-3520 sshd[3210]: Failed password for root from 203.0.113.5 port 60019 ssh2
+2026-10-28T03:01:20.126310+01:00 ian-Vostro-3520 sshd[3211]: Failed password for root from 203.0.113.5 port 60021 ssh2
+2026-10-28T03:01:28.231972+01:00 ian-Vostro-3520 sshd[3212]: Failed password for root from 203.0.113.5 port 60023 ssh2
+2026-10-28T03:01:36.338415+01:00 ian-Vostro-3520 sshd[3213]: Failed password for root from 203.0.113.5 port 60025 ssh2
+2026-10-28T03:01:44.442860+01:00 ian-Vostro-3520 sshd[3214]: Failed password for root from 203.0.113.5 port 60027 ssh2
+2026-10-28T03:01:52.549301+01:00 ian-Vostro-3520 sshd[3215]: Failed password for root from 203.0.113.5 port 60029 ssh2
+2026-10-28T03:02:00.655744+01:00 ian-Vostro-3520 sshd[3216]: Accepted password for root from 203.0.113.5 port 60031 ssh2
+2026-10-28T03:02:00.661089+01:00 ian-Vostro-3520 sshd[3216]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-28T03:03:15.770412+01:00 ian-Vostro-3520 sshd[3250]: Invalid user oracle from 2001:db8::1 port 50000
+2026-10-28T03:03:17.884196+01:00 ian-Vostro-3520 sshd[3250]: Failed password for invalid user oracle from 2001:db8::1 port 50000 ssh2
+2026-10-28T03:04:30.991625+01:00 ian-Vostro-3520 sshd[3301]: Accepted password for ian from 192.168.1.20 port 51040 ssh2
+2026-10-28T03:04:31.002871+01:00 ian-Vostro-3520 sshd[3301]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+Oct 28 03:06:02 ian-Vostro-3520 sshd-session[3350]: Invalid user guest from 198.51.100.23 port 41000
+Oct 28 03:06:04 ian-Vostro-3520 sshd-session[3350]: Failed password for invalid user guest from 198.51.100.23 port 41000 ssh2
+Oct 28 03:06:20 ian-Vostro-3520 sshd-session[3351]: Accepted publickey for ian from 192.168.1.20 port 51055 ssh2: ED25519 SHA256:mX4/9n9ThUyrY9tH96ZUc3tPXCfRxvRMiWMlLs0ZqyQ

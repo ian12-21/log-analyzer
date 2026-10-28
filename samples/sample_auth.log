@@ -1,0 +1,70 @@
+2026-10-28T22:41:12.596624+01:00 ian-Vostro-3520 useradd[13062]: new user: name=sshd, UID=133, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+2026-10-28T22:41:28.778589+01:00 ian-Vostro-3520 sshd[14431]: Server listening on 0.0.0.0 port 22.
+2026-10-28T22:41:28.778770+01:00 ian-Vostro-3520 sshd[14431]: Server listening on :: port 22.
+2026-10-28T22:45:25.362795+01:00 ian-Vostro-3520 sshd[15106]: Connection closed by authenticating user ian 127.0.0.1 port 50478 [preauth]
+2026-10-28T22:45:25.565788+01:00 ian-Vostro-3520 sshd[15120]: Connection closed by authenticating user ian 127.0.0.1 port 50490 [preauth]
+2026-10-28T22:45:32.488040+01:00 ian-Vostro-3520 sshd[15132]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:45:34.358054+01:00 ian-Vostro-3520 sshd[15132]: Failed password for ian from 127.0.0.1 port 50500 ssh2
+2026-10-28T22:45:47.818174+01:00 ian-Vostro-3520 sshd[15132]: Failed password for ian from 127.0.0.1 port 50500 ssh2
+2026-10-28T22:45:54.043518+01:00 ian-Vostro-3520 sshd[15132]: Accepted password for ian from 127.0.0.1 port 50500 ssh2
+2026-10-28T22:45:54.047402+01:00 ian-Vostro-3520 sshd[15132]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:45:54.188561+01:00 ian-Vostro-3520 sshd[15202]: Received disconnect from 127.0.0.1 port 50500:11: disconnected by user
+2026-10-28T22:45:54.190256+01:00 ian-Vostro-3520 sshd[15202]: Disconnected from user ian 127.0.0.1 port 50500
+2026-10-28T22:45:54.190357+01:00 ian-Vostro-3520 sshd[15132]: pam_unix(sshd:session): session closed for user ian
+2026-10-28T22:46:27.469775+01:00 ian-Vostro-3520 sshd[15315]: Accepted publickey for ian from 127.0.0.1 port 54066 ssh2: ED25519 SHA256:mX4/9n9ThUyrY9tH96ZUc3tPXCfRxvRMiWMlLs0ZqyQ
+2026-10-28T22:46:27.472059+01:00 ian-Vostro-3520 sshd[15315]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:46:27.596237+01:00 ian-Vostro-3520 sshd[15367]: Received disconnect from 127.0.0.1 port 54066:11: disconnected by user
+2026-10-28T22:46:27.596484+01:00 ian-Vostro-3520 sshd[15367]: Disconnected from user ian 127.0.0.1 port 54066
+2026-10-28T22:46:27.597034+01:00 ian-Vostro-3520 sshd[15315]: pam_unix(sshd:session): session closed for user ian
+2026-10-28T22:49:49.649954+01:00 ian-Vostro-3520 sshd[15655]: Invalid user nepostojeci from 127.0.0.1 port 48800
+2026-10-28T22:49:58.681122+01:00 ian-Vostro-3520 sshd[15655]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:49:58.681327+01:00 ian-Vostro-3520 sshd[15655]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+2026-10-28T22:50:00.402529+01:00 ian-Vostro-3520 sshd[15655]: Failed password for invalid user nepostojeci from 127.0.0.1 port 48800 ssh2
+2026-10-28T22:50:02.766893+01:00 ian-Vostro-3520 sshd[15655]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:50:04.371571+01:00 ian-Vostro-3520 sshd[15655]: Failed password for invalid user nepostojeci from 127.0.0.1 port 48800 ssh2
+2026-10-28T22:50:06.205712+01:00 ian-Vostro-3520 sshd[15655]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:50:08.358928+01:00 ian-Vostro-3520 sshd[15655]: Failed password for invalid user nepostojeci from 127.0.0.1 port 48800 ssh2
+2026-10-28T22:50:09.936936+01:00 ian-Vostro-3520 sshd[15655]: Connection closed by invalid user nepostojeci 127.0.0.1 port 48800 [preauth]
+2026-10-28T22:50:09.937529+01:00 ian-Vostro-3520 sshd[15655]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+2026-10-28T22:50:33.056182+01:00 ian-Vostro-3520 sshd[15709]: Accepted publickey for ian from 127.0.0.1 port 39164 ssh2: ED25519 SHA256:mX4/9n9ThUyrY9tH96ZUc3tPXCfRxvRMiWMlLs0ZqyQ
+2026-10-28T22:50:33.059633+01:00 ian-Vostro-3520 sshd[15709]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:51:16.348645+01:00 ian-Vostro-3520 sshd[16056]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:51:18.110146+01:00 ian-Vostro-3520 sshd[16056]: Failed password for ian from 127.0.0.1 port 53314 ssh2
+2026-10-28T22:51:22.112872+01:00 ian-Vostro-3520 sshd[16056]: Failed password for ian from 127.0.0.1 port 53314 ssh2
+2026-10-28T22:51:28.025647+01:00 ian-Vostro-3520 sshd[16056]: Accepted password for ian from 127.0.0.1 port 53314 ssh2
+2026-10-28T22:51:28.028970+01:00 ian-Vostro-3520 sshd[16056]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:53:55.682910+01:00 ian-Vostro-3520 sshd[16767]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:53:57.941049+01:00 ian-Vostro-3520 sshd[16767]: Failed password for ian from 127.0.0.1 port 38740 ssh2
+2026-10-28T22:54:04.303102+01:00 ian-Vostro-3520 sshd[16767]: Failed password for ian from 127.0.0.1 port 38740 ssh2
+2026-10-28T22:54:12.678576+01:00 ian-Vostro-3520 sshd[16767]: Accepted password for ian from 127.0.0.1 port 38740 ssh2
+2026-10-28T22:54:12.682151+01:00 ian-Vostro-3520 sshd[16767]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:54:27.159595+01:00 ian-Vostro-3520 sshd[17088]: Invalid user admin from 127.0.0.1 port 49316
+2026-10-28T22:54:29.330558+01:00 ian-Vostro-3520 sshd[17088]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:54:29.330784+01:00 ian-Vostro-3520 sshd[17088]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+2026-10-28T22:54:30.921268+01:00 ian-Vostro-3520 sshd[17088]: Failed password for invalid user admin from 127.0.0.1 port 49316 ssh2
+2026-10-28T22:54:32.698069+01:00 ian-Vostro-3520 sshd[17088]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:54:34.700583+01:00 ian-Vostro-3520 sshd[17088]: Failed password for invalid user admin from 127.0.0.1 port 49316 ssh2
+2026-10-28T22:54:42.793459+01:00 ian-Vostro-3520 sshd[17088]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-28T22:54:44.836304+01:00 ian-Vostro-3520 sshd[17088]: Failed password for invalid user admin from 127.0.0.1 port 49316 ssh2
+2026-10-28T22:54:46.766867+01:00 ian-Vostro-3520 sshd[17088]: Connection closed by invalid user admin 127.0.0.1 port 49316 [preauth]
+2026-10-28T22:54:46.767396+01:00 ian-Vostro-3520 sshd[17088]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1 
+2026-10-28T22:55:10.751505+01:00 ian-Vostro-3520 sshd[17144]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root
+2026-10-28T22:55:13.305299+01:00 ian-Vostro-3520 sshd[17144]: Failed password for root from 127.0.0.1 port 40024 ssh2
+2026-10-28T22:55:25.178228+01:00 ian-Vostro-3520 sshd[17144]: message repeated 2 times: [ Failed password for root from 127.0.0.1 port 40024 ssh2]
+2026-10-28T22:55:26.437078+01:00 ian-Vostro-3520 sshd[17144]: Connection closed by authenticating user root 127.0.0.1 port 40024 [preauth]
+2026-10-28T22:55:26.437439+01:00 ian-Vostro-3520 sshd[17144]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=root
+2026-10-28T22:55:49.771483+01:00 ian-Vostro-3520 sshd[17244]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:55:51.677565+01:00 ian-Vostro-3520 sshd[17244]: Failed password for ian from 127.0.0.1 port 44834 ssh2
+2026-10-28T22:55:54.795948+01:00 ian-Vostro-3520 sshd[17244]: Failed password for ian from 127.0.0.1 port 44834 ssh2
+2026-10-28T22:56:01.552883+01:00 ian-Vostro-3520 sshd[17244]: Accepted password for ian from 127.0.0.1 port 44834 ssh2
+2026-10-28T22:56:01.556463+01:00 ian-Vostro-3520 sshd[17244]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
+2026-10-28T22:56:11.988713+01:00 ian-Vostro-3520 sshd[17534]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:56:13.915342+01:00 ian-Vostro-3520 sshd[17534]: Failed password for ian from 127.0.0.1 port 36418 ssh2
+2026-10-28T22:56:19.457739+01:00 ian-Vostro-3520 sshd[17534]: message repeated 2 times: [ Failed password for ian from 127.0.0.1 port 36418 ssh2]
+2026-10-28T22:56:19.670988+01:00 ian-Vostro-3520 sshd[17534]: Connection closed by authenticating user ian 127.0.0.1 port 36418 [preauth]
+2026-10-28T22:56:19.671609+01:00 ian-Vostro-3520 sshd[17534]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:56:25.082149+01:00 ian-Vostro-3520 sshd[17558]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=127.0.0.1  user=ian
+2026-10-28T22:56:27.265069+01:00 ian-Vostro-3520 sshd[17558]: Failed password for ian from 127.0.0.1 port 60278 ssh2
+2026-10-28T22:56:32.361567+01:00 ian-Vostro-3520 sshd[17558]: Failed password for ian from 127.0.0.1 port 60278 ssh2
+2026-10-28T22:56:40.598769+01:00 ian-Vostro-3520 sshd[17558]: Accepted password for ian from 127.0.0.1 port 60278 ssh2
+2026-10-28T22:56:40.601872+01:00 ian-Vostro-3520 sshd[17558]: pam_unix(sshd:session): session opened for user ian(uid=1001) by ian(uid=0)
