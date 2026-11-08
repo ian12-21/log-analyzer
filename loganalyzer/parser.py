@@ -11,15 +11,15 @@ class Event:
     ip: str
     port: int | None
     host: str
-    count: int = 1     # za "message repeated N times"
+    count: int = 1     # for "message repeated N times"
 
 
-# Zaglavlje: klasični ("Oct 28 03:06:02") ili ISO 8601 timestamp, host, sshd/sshd-session[pid]
+# Header: classic ("Oct 28 03:06:02") or ISO 8601 timestamp, host, sshd/sshd-session[pid]
 HEADER_RE = re.compile(
     r"^(?P<ts>\w{3} [ \d]\d \d{2}:\d{2}:\d{2}|\d{4}-\d{2}-\d{2}T\S+)\s+"
     r"(?P<host>\S+)\s+sshd(?:-session)?\[\d+\]:\s+(?P<msg>.*)$"
 )
-# \S+ za IP da prođe i IPv6, \S* za korisnika jer ime može biti prazno
+# \S+ for the IP so IPv6 matches too, \S* for the user because the name can be empty
 FAILED_RE = re.compile(r"^Failed \S+ for (?:invalid user )?(?P<user>\S*) from (?P<ip>\S+) port (?P<port>\d+)")
 ACCEPTED_RE = re.compile(r"^Accepted \S+ for (?P<user>\S+) from (?P<ip>\S+) port (?P<port>\d+)")
 INVALID_RE = re.compile(r"^Invalid user (?P<user>\S*) from (?P<ip>\S+)(?: port (?P<port>\d+))?")
@@ -31,7 +31,7 @@ PATTERNS = [("failed", FAILED_RE), ("accepted", ACCEPTED_RE), ("invalid_user", I
 def parse_timestamp(raw: str, now: datetime) -> datetime:
     if raw[0].isdigit():
         return datetime.fromisoformat(raw).replace(tzinfo=None)
-    # klasični format nema godinu: uzmi tekuću, a ako ispadne u budućnosti, to je prošla godina
+    # the classic format has no year: use the current one, and if that lands in the future, it is last year
     ts = datetime.strptime(f"{now.year} {raw}", "%Y %b %d %H:%M:%S")
     if ts > now + timedelta(days=1):
         ts = ts.replace(year=now.year - 1)

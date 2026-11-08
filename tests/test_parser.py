@@ -6,7 +6,8 @@ import pytest
 
 from loganalyzer.parser import parse_line, parse_lines
 
-NOW = datetime(2026, 10, 18, 12, 0)
+# the day after the samples were recorded - otherwise classic "Oct 28" lines fall into last year
+NOW = datetime(2026, 10, 29, 12, 0)
 SAMPLES = Path(__file__).parent.parent / "samples"
 
 
@@ -69,3 +70,6 @@ def test_attack_log():
     assert any(e.ip == "203.0.113.5" and e.kind == "accepted" and e.user == "root" for e in events)
     assert sum(e.count for e in events if e.ip == "198.51.100.7" and e.kind == "failed") == 4
     assert events == sorted(events, key=lambda e: e.timestamp)
+    # classic lines at the end of the file must stay at the end, in the same year
+    assert events[0].timestamp == datetime(2026, 10, 28, 2, 55, 10, 104512)
+    assert (events[-1].timestamp, events[-1].kind) == (datetime(2026, 10, 28, 3, 6, 20), "accepted")
