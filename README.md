@@ -13,7 +13,7 @@ The project is a work in progress. Done so far:
 - [x] environment setup and project structure
 - [x] sample logs (`samples/`)
 - [x] parser (`loganalyzer/parser.py`) with tests
-- [ ] analysis and statistics
+- [x] analysis and statistics (`loganalyzer/analysis.py`) with tests
 - [ ] fetching over SSH and rotated (`.gz`) logs
 - [ ] CLI and summary output (KT1)
 - [ ] delta reading and real-time streaming
@@ -68,6 +68,18 @@ with open("samples/attack_auth.log") as f:
 
 for e in events[:3]:
     print(e.timestamp, e.kind, e.user, e.ip)
+```
+
+Statistics over the parsed events:
+
+```python
+from loganalyzer.analysis import summarize
+
+stats = summarize(events)
+print(stats.failed, stats.accepted)   # weighted by `message repeated` counts
+print(stats.top_ips(5))               # failed attempts per IP
+print(stats.top_invalid_users(5))     # non-existent user names
+print(stats.hourly_series())          # (hour, failed) including zero hours
 ```
 
 Planned command-line interface (not implemented yet):
